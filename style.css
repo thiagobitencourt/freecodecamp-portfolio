@@ -3,6 +3,7 @@
 :root {
     --bg-color: #E4E9EF;
     --link-color: #1E4170;
+    --gray-color: #BDBDBD;
 }
 
 body {
@@ -44,7 +45,6 @@ a:hover, a:active {
     margin-bottom: 13px !important;
 }
 
-
 #navbar {
     position: fixed;
     top: 15px;
@@ -57,6 +57,59 @@ a:hover, a:active {
     grid-gap: 30px;
     list-style: none;
     margin-top: 0;
+}
+
+#projects {
+    height: 100vh;
+}
+
+.page-title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.projects-list {
+    display: grid;
+    grid-gap: 30px;
+    margin: 0 15%;
+}
+
+.project-tile {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.project-tile:hover {
+    padding: 14px;
+    border: 1px solid var(--gray-color);
+}
+
+.project-image {
+    height: auto;
+    width: 130px;
+}
+
+.project-title {
+    font-weight: bold;
+}
+
+.project-title,
+.project-description {
+    display: block;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.project-links a {
+    margin-right: 30px; 
+}
+
+#contact {
+    height: 100vh;
 }
 
 @media screen and (max-width: 700px) {
