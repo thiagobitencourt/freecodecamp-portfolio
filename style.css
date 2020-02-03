@@ -60,7 +60,7 @@ a:hover, a:active {
 }
 
 #projects {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .page-title {
@@ -115,5 +115,9 @@ a:hover, a:active {
 @media screen and (max-width: 700px) {
     #navbar {
         display: none;
+    }
+
+    .projects-list {
+        margin: 0;
     }
 }
