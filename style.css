@@ -112,12 +112,22 @@ a:hover, a:active {
     height: 100vh;
 }
 
+.contact-list {
+    display: grid;
+    grid-gap: 30px;
+    margin: 0 15%;
+}
+
+.contact-link {
+    text-transform: none;
+}
+
 @media screen and (max-width: 700px) {
     #navbar {
         display: none;
     }
 
-    .projects-list {
+    .projects-list, .contact-list {
         margin: 0;
     }
 }
