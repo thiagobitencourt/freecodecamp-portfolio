@@ -118,5 +118,17 @@
         </ul>
     </footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script>
+        window.addEventListener('hashchange', function() {
+            const navBarItems = document.querySelectorAll('#navbar a');
+            for(let i = 0; i < navBarItems.length; i++) {
+                navBarItems[i].classList.remove('active');
+            }
+
+            const currentHash = window.location.hash;
+            const navItem = document.querySelector('#navbar a[href="' + currentHash + '"]');
+            navItem.classList.add('active');
+        });
+    </script>
 </body>
 </html>
